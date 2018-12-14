@@ -1,0 +1,27 @@
+.main {
+  padding: 70px 0;
+  margin-left: 260px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 333;
+  background: #f4f3ef;
+
+  transition: margin-left 160ms ease-in-out;
+
+  .stock-info {
+    .card {
+      .card-header {
+        color: $white;
+        background: $black;
+        font-weight: 700 !important;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@import "main/user-profile";
+@import "main/sales-man";
+@import "main/products";
+@import "main/inventory";
+@import "main/messages";

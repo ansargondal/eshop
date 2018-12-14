@@ -1,0 +1,67 @@
+.main {
+  label.error {
+    position: absolute;
+    top: 100%;
+    color: #bd2440;
+  }
+  background-color: #F4F3EF;
+  .col-md-6 {
+
+  }
+  .card {
+    border: 1px solid rbga(7, 7, 7, .4);
+    margin: 0 auto;
+    background-color: transparent;
+    margin-bottom: 20px;
+    .card-body {
+      p {
+        font-size: .8em;
+      }
+    }
+    .card-footer {
+      background-color: transparent;
+    }
+  }
+
+  .row .table-responsive {
+    border: 1px solid rgba(7, 7, 7, .1);
+    padding: 10px;
+    table {
+      background-color: transparent;
+      border: 0;
+    }
+    div {
+      text-align: center;
+      .pagination {
+        display: inline-block;
+        li {
+          padding: 0;
+        }
+      }
+      .pagination > li {
+        display: inline-block;
+      }
+      .pagination > li > a {
+        display: inline-block;
+        background-color: transparent;
+        color: black;
+        width: 25px;
+        text-decoration: none;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid rgba(7, 7, 7, 0.5);
+        margin: 0 5px;
+        text-align: center;
+      }
+      .pagination > .active > a {
+        background-color: #BD2440;
+        color: white;
+        border: 1px solid #BD2440;
+      }
+    }
+  }
+}
+
+.modal {
+  z-index: 99999;
+}

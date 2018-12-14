@@ -1,0 +1,39 @@
+.footer {
+  background: #f4f3ef;
+  padding: 5px 35px;
+  .row {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+
+  ul.footer-links {
+    float: left;
+    li {
+      a {
+        color: rgba(0, 0, 0, .7);
+        font-size: .7em;
+      }
+    }
+  }
+
+  .credits {
+    padding-top: 5.5px;
+    float: right;
+    color: rgba(0, 0, 0, .5);
+    font-size: .7em;
+    .fa-heart {
+      color: red;
+    }
+
+    a {
+      text-decoration: none !important;
+      &:hover{
+        text-decoration: underline!important;
+      }
+    }
+
+  }
+  a {
+    color: rgba(0, 0, 0, .7)
+  }
+}

@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messages - Ivf1match</title>h
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/data-table/data-table.css">
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/data-table.css">
+</head>
+<body id="messages-page">
+<div class="box header-box">
+    <header class="header">
+        <nav class="navbar navbar-light navbar-expand">
+            <a href="#" class="navbar-brand js-sb-toggle">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </a>
+            <span class="page-title">Messages</span>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link " data-toggle="dropdown">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="badge badge-danger badge-pill">22</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">First </a>
+                        <a href="#" class="dropdown-item">second</a>
+                        <a href="#" class="dropdown-item">third</a>
+                        <a href="#" class="dropdown-item">Fourth</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">View Profile</a>
+                        <a href="#" class="dropdown-item">Edit Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<main class="main message" id="messages">
+    <div class="c-container">
+        <div class="row">
+            <div class="col-md-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="messages-summary">
+                            <li class="messages"><i class="fa fa-files-o" aria-hidden="true"></i></li>
+                            <li>Messages</li>
+                            <li><span class="divider"></span></li>
+                            <li class="total">200</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="messages-summary">
+                            <li class="read"><i class="fa fa-envelope-open" aria-hidden="true"></i></li>
+                            <li>Read</li>
+                            <li><span class="divider"></span></li>
+                            <li class="total">200</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="messages-summary">
+                            <li class="unread"><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                            <li>Unread</li>
+                            <li><span class="divider"></span></li>
+                            <li class="total">200</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table  dt" data-toggle="table"
+                       data-search="true" data-pagination="true" id="data-table">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Message</th>
+                        <th scope="col" class="no-sort">Action</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">01</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">02</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">03</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">04</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">05</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">06</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">08</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">09</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">10</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">11</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">13</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">14</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">15</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">17</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">18</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">19</td>
+                        <td>Randy</td>
+                        <td>randy@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>I need some...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">20</td>
+                        <td>John</td>
+                        <td>john@gmail.com</td>
+                        <td>oct_09,2018</td>
+                        <td>Home delivery...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">21</td>
+                        <td>Penny</td>
+                        <td>penny@gmail.com</td>
+                        <td>oct 09, 2018</td>
+                        <td>Order is pendi...</td>
+                        <p class="text-center full-message d-none">I need some infor about the task you are doing at
+                            home.it might be really useful for my colleagues as well as for my boos. I 'll be really
+                            thankful to you.</p>
+                        <td class="actions text-center">
+                            <a href="#" data-toggle="tooltip" class="action js-btn-reply"
+                               data-placement="top"
+                               title="Reply">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
+                               title="Read">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
+                               data-placement="top"
+                               title="Delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><!--!row-->
+    </div>
+</main>
+<!--Main Sidebar-->
+<sidebar class="sidebar">
+    <div class="sb-container">
+        <p class="sb-brand">
+            <a href="dashboard.html">
+                <img class="img-fluid" src="../img/logo-white.png" alt="IVF1 Logo"> <span
+                    class="title"><span>IVF1</span>Match</span>
+            </a>
+        </p>
+
+        <ul class="sb-main-nav">
+            <li class="sb-profile-container">
+                <a href="#">
+                <span class="sb-profile">
+                    <img src="../img/profile.jpeg" alt="profile pic" class="img-fluid">
+                </span>
+                    Todd B Cutick</a>
+                <ul class="sb-sub-nav">
+                    <li><a href="user-profile.html"><span class="initials">MP</span>My Profile</a></li>
+                    <li><a href="user-profile.html"><span class="initials">EP</span>Edit Profile</a></li>
+                    <li><a href="user-profile.html"><span class="initials">S</span>Settings</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">
+                    <i class="fa fa-industry" aria-hidden="true"></i>DASHBOARD
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="dashboard.html"><span class="initials">O</span>Overview</a></li>
+                    <li><a href="dashboard.html"><span class="initials">S</span>Stats</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>DONORS
+
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="donor.html"><span class="initials">VA</span>View All</a></li>
+                    <li><a href="donor.html"><span class="initials">AD</span>Active Donors</a></li>
+                    <li><a href="donor.html"><span class="initials">ID</span>Inactive Donors</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>RECIPIENTS
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="recipient.html"><span class="initials">AN</span>Add New</a></li>
+                    <li><a href="recipient.html"><span class="initials">VA</span>View All</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>MESSAGES
+                    <span class="badge badge-danger">22</span>
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="message.html"><span class="initials">VA</span>View All</a></li>
+                    <li><a href="message.html"><span class="initials">R</span>Read</a></li>
+                    <li><a href="message.html"><span class="initials">UR</span>Unread</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users" aria-hidden="true"></i>USERS
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="users.html"><span class="initials">AN</span>Add new</a></li>
+                    <li><a href="users.html"><span class="initials">EU</span>Edit User</a></li>
+                    <li><a href="users.html"><span class="initials">VA</span>View All</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</sidebar>
+
+
+<div class="box footer-box">
+    <footer class="footer clearfix">
+        <div class="row">
+            <ul class="list-inline footer-links">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="credits">
+                Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://devdimensions.com/"
+                                                                                  target="_blank">DevDimension.</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!--delete modal-->
+<div class="modal" id="delete-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="delete.php" method="post">
+                <div class="modal-header">
+                    <h6 class="modal-title">CONFIRM DELETE</h6>
+                    <a href="#" class="close" data-dismiss="modal">&times</a>
+                </div>
+                <div class="modal-body">
+                    <p>Do you Really want to delete?</p>
+                    <input type="text" name="id" id="id" class="d-none">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-save bg-danger bttn" id="js-btn-delete" type="submit">Delete <i
+                            class="fa fa-spinner hide_spinner" aria-hidden="true"></i></button>
+                    <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--!delete modal-->
+
+<!--View Message Modal-->
+<div class="modal" id="view-message-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Message Details</h5>
+                <button class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control readonly" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Eamil</label>
+                            <input type="text" readonly class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="form-control" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn js-view-btn-reply bttn">Reply</button>
+                <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--!View Message Modal-->
+
+
+<!--Reply Message Modal-->
+<div class="modal" id="reply-message-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>REPLY MESSAGE</h5>
+                <button class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" autofocus id="message" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn js-main-btn-reply bttn">REPLY <i class="fa fa-spinner hide_spinner"
+                                                                    aria-hidden="true"></i></button>
+                <button class="btn btn-close" data-dismiss="modal">CANCEL</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/data-table/data-table.js"></script>
+<script src="../vendor/data-table/dataTables.conditionalPaging.js"></script>
+<script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="../vendor/jquery-validation/jquery.validate.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/messages.js"></script>
+</body>
+</html>

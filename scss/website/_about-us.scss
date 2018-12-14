@@ -1,0 +1,15 @@
+.about-us {
+
+  @media screen and(max-width: 768px) {
+    h2 {
+      padding-bottom: 10px;
+    }
+    h3, p {
+      text-align: center;
+    }
+  }
+  .img-doctor {
+    width: 500px;
+    height: 250px;
+  }
+}

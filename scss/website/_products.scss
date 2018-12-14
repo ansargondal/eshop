@@ -1,0 +1,16 @@
+.products {
+  background: url("../../img/bullets.jpg");
+  position: relative;
+  @include overlay();
+  color: #fff;
+  padding-bottom: 50px;
+  @media screen and(max-width: 768px) {
+    img {
+      margin-bottom: 15px;
+      max-width: 250px;
+    }
+    .products-container {
+      text-align: center;
+    }
+  }
+}

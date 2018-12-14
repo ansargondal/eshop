@@ -1,0 +1,16 @@
+#main-slider {
+  .carousel-item {
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: rgba(0, 0, 0, .7);
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,24 @@
+form{
+    h2{
+        text-align: left;
+    }
+    box-shadow: 0 0px 3px 0px rgba(7,7,7,.2);
+    padding: 25px;
+    color: rgba(7,7,7,.8);
+    margin: 15px;
+    
+    
+    @media(max-width:420px){
+        h2{
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }    
+}
+form>.row:last-of-type{
+        div{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
+    }

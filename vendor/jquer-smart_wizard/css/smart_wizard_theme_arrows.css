@@ -1,0 +1,221 @@
+/* SmartWizard Theme: Arrows */
+.sw-theme-arrows {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.sw-theme-arrows > .sw-container {
+    min-height: 200px;
+    padding: 50px;
+}
+
+.sw-theme-arrows .step-content {
+    padding: 0 10px;
+    border: 0px solid #D4D4D4;
+    background-color: #FFF;
+    text-align: left;
+}
+
+.sw-theme-arrows .sw-toolbar {
+    padding: 10px;
+    margin-bottom: 0 !important;
+}
+
+.sw-theme-arrows > .sw-toolbar-top {
+}
+
+.sw-theme-arrows > .sw-toolbar-bottom {
+    padding: 30px;
+}
+
+.sw-theme-arrows > ul.step-anchor {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0px;
+    background: #fff;
+    /*    background: #f5f5f5;*/
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.sw-theme-arrows > ul.step-anchor li + li:before {
+    padding: 0;
+
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a, .sw-theme-arrows > ul.step-anchor > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px 10px 25px;
+    position: relative;
+    display: block;
+    border: 0 !important;
+    border-radius: 0;
+    outline-style: none;
+    background: #929292;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:after {
+
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 100%;
+    background-image: url('../../../img/Arrow_92.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -50px;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.sw-theme-arrows > ul.step-anchor > li:first-of-type > a:before {
+    display: none;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:before {
+
+}
+
+.sw-theme-arrows > ul.step-anchor > li:first-child > a {
+    padding-left: 15px;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    outline-style: none;
+    background: #929292;
+    border-color: #929292;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a:hover:after {
+    border-left-color: #929292;
+}
+
+.sw-theme-arrows > ul.step-anchor > li > a small {
+}
+
+.sw-theme-arrows > ul.step-anchor > li.clickable > a:hover {
+    color: #4285F4 !important;
+    background: #46b8da !important;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.active > a {
+    border-color: #BD2440 !important;
+    color: #fff !important;
+    background: #BD2440 !important;
+
+}
+
+.sw-theme-arrows > ul.step-anchor > li.active > a:after {
+    /*    border-left: 30px solid #BD2440 !important;*/
+}
+
+.sw-theme-arrows > ul.step-anchor > li.done > a {
+    border-color: #bd2440 !important;
+    /*  #5cb85c */
+    color: #fff !important;
+    background: #bd2440 !important;
+    font-weight: bold;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.done > a:after {
+    /*    border-left: 30px solid #bd2440;*/
+    /* c3e6cb */;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.danger > a {
+    border-color: #d9534f !important;
+    color: #fff !important;
+    background: #d9534f !important;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.danger > a:after {
+    border-left: 30px solid #d9534f !important;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.disabled > a, .sw-theme-arrows > ul.step-anchor > li.disabled > a:hover {
+    color: #eee !important;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    /*
+        .sw-theme-arrows > ul.step-anchor {
+            border: 0;
+            background: #fff !important;
+        }
+
+        .sw-theme-arrows > .nav-tabs > li {
+            float: none !important;
+            margin-bottom: 0;
+        }
+
+        .sw-theme-arrows > ul.step-anchor > li > a, .sw-theme-arrows > ul.step-anchor > li > a:hover {
+            padding-left: 15px;
+            margin-right: 0;
+            margin-bottom: 1px;
+        }
+    */
+    /*    .sw-theme-arrows > ul.step-anchor > li.active > a:after, .sw-theme-arrows > ul.step-anchor > li.active > a:before ,*/
+    .sw-theme-arrows > ul.step-anchor > li > a:after, .sw-theme-arrows > ul.step-anchor > li > a:before {
+        display: none;
+        /*        border-left: 2px solid rgba(7,7,7,.8);*/
+    }
+}
+
+/* Loader Custom Style */
+/*.sw-theme-arrows::before {*/
+/*
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #5cb85c;
+}
+*/
+
+.sw-theme-arrows > ul > li > a {
+    font-weight: bold;
+    padding-top: 18px !important;
+    padding-bottom: 17px !important;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.done > a:after,
+.sw-theme-arrows > ul.step-anchor > li.active > a:after {
+
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 100%;
+    background-image: url('../../../img/Arrow_ffff.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -50px;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.sw-theme-arrows > ul.step-anchor li {
+    border-bottom: 2px solid #fff !important;
+}
+
+@media (max-width: 768px) {
+    .sw-theme-arrows > ul.step-anchor > li.done > a:after,
+    .sw-theme-arrows > ul.step-anchor > li.active > a:after {
+        display: none !important;
+        /*        background:transparent;*/
+
+    }
+
+    .sw-theme-arrows > ul.step-anchor > li.active a,
+    .sw-theme-arrows > ul.step-anchor > li a,
+    .sw-theme-arrows > ul.step-anchor > li a:hover {
+        border-right: 2px solid white !important;
+        padding: 10px !important;
+
+    }
+}

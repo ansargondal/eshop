@@ -1,0 +1,56 @@
+.main {
+  background-color: #F4F3EF;
+}
+
+.main .row .table-responsive {
+  border: 1px solid rgba(7, 7, 7, 0.1);
+  padding: 10px;
+}
+
+.main .row .table-responsive table {
+  background-color: transparent;
+  border: 0;
+}
+
+.main .row .table-responsive div {
+  text-align: center;
+}
+
+.main .row .table-responsive div .pagination {
+  display: inline-block;
+}
+
+.main .row .table-responsive div .pagination li {
+  padding: 0;
+}
+
+.main .row .table-responsive div .pagination > li {
+  display: inline-block;
+}
+
+.main .row .table-responsive div .pagination > li > a {
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  width: 25px;
+  text-decoration: none;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(7, 7, 7, 0.5);
+  margin: 0 5px;
+  text-align: center;
+}
+
+.main .row .table-responsive div .pagination > .active > a {
+  background-color: #BD2440;
+  color: white;
+  border: 1px solid #BD2440;
+}
+
+.modal {
+  z-index: 99999;
+}
+
+#view-message-modal .modal-body input, #view-message-modal .modal-body textarea {
+  background-color: transparent !important;
+}

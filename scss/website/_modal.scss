@@ -1,0 +1,212 @@
+#step-2 {
+  @import "../admin/global";
+}
+
+//--------------------
+
+.modal-content > .modal-body {
+  padding: 0 !important;
+  border-radius: 5px 5px 0 0;
+}
+
+.triger {
+  padding: 50px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+  position: relative;
+  small {
+    text-align: left;
+    position: absolute;
+    left: 16px;
+    color: rgba(7, 7, 7, .3);
+  }
+  button,
+  button:hover {
+    background-color: #707070;
+  }
+}
+
+#exampleModal1,
+#congrats {
+  .modal-header {
+    background-color: $primary_color;
+    h5 {
+      color: #fff;
+      font-weight: bold;
+      span {
+        color: #000;
+      }
+    }
+  }
+  .wrap {
+    padding: 20px 30px;
+    h3, h4, h5 {
+      text-align: center;
+      color: rgba(7, 7, 7, .4);
+      span {
+        color: $primary_color;
+      }
+    }
+    .strt {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+}
+
+#smartwizard {
+  ul {
+    border-radius: 5px;
+    padding: 15px;
+    padding-bottom: 0;
+    li > a > i {
+      display: none;
+    }
+
+  }
+  .tab-pane {
+    padding: 16px;
+  }
+  .wrap {
+    padding: 20px 10px 23px 30px;
+    h5 {
+      //            text-align: center;
+      color: rgba(7, 7, 7, .4);
+      span {
+        color: $primary_color;
+      }
+    }
+    //        ----------
+
+    .radio {
+      margin: 0.5rem;
+    }
+    .radio input[type="radio"] {
+      position: relative;
+      margin-left: -15px;
+      opacity: 0;
+    }
+    .radio input[type="radio"] + .radio-label:before {
+      content: '';
+      background: #f4f4f4;
+      border-radius: 100%;
+      border: 1px solid #b4b4b4;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 0.3em;
+      margin-right: 10px;
+      vertical-align: top;
+      cursor: pointer;
+      text-align: center;
+      transition: all 250ms ease;
+    }
+    .radio input[type="radio"]:checked + .radio-label:before {
+      background-color: #27AE60;
+      box-shadow: inset 0 0 0 4px #f4f4f4;
+    }
+    .radio input[type="radio"]:focus + .radio-label:before {
+      outline: none;
+      border-color: #27AE60;
+    }
+    .radio input[type="radio"]:disabled + .radio-label:before {
+      box-shadow: inset 0 0 0 4px #f4f4f4;
+      border-color: #b4b4b4;
+      background: #b4b4b4;
+    }
+    .radio input[type="radio"] + .radio-label:empty:before {
+      margin-right: 0;
+    }
+
+    //        -----------
+  }
+
+  #step-1,
+  #step-3,
+  #step-4,
+  #step-5 {
+    h4 {
+      text-align: left;
+      color: rgba(7, 7, 7, .4);
+      //            padding-left: 16px;
+    }
+    label {
+      font-size: 1.3em;
+      color: rgba(7, 7, 7, .4);
+    }
+    small {
+      padding-left: 10px;
+      color: red;
+    }
+  }
+
+}
+
+.sw-theme-dots > ul.step-anchor:before {
+  width: 95%;
+  top: 61px;
+}
+
+.sw-theme-dots > ul.step-anchor > li > a:before {
+  left: 33%;
+}
+
+.sw-theme-dots > ul.step-anchor > li > a:after {
+  left: 37%;
+}
+
+@media(max-width: 768px) {
+  .sw-theme-dots > ul.step-anchor:before {
+    display: none;
+  }
+  .sw-theme-dots > ul.step-anchor > li > a:before {
+    display: none;
+  }
+  .sw-theme-dots > ul.step-anchor > li > a:after {
+    display: none;
+  }
+
+  .sw-theme-dots > ul.step-anchor > li.active > a,
+  .sw-theme-dots > ul.step-anchor > li.active > a:hover {
+    border-bottom: 2px solid #27AE60;
+    //        border-bottom: 2px solid #27AE60;
+  }
+
+  #smartwizard {
+    h2 {
+      font-size: 1.4em;
+    }
+    .wrap {
+
+      padding: 20px 15px;
+      h3 {
+        font-size: 1.3em;
+      }
+      .radio input[type="radio"] + .radio-label:before {
+        margin-right: 10px;
+        width: 1em;
+        height: 1em;
+      }
+    }
+
+  }
+  #smartwizard .wrap .radio input[type="radio"] + .radio-label:before {
+
+  }
+
+}
+
+.modal-footer {
+  padding: 7px 16px;
+}
+
+//#congrats{
+//    .modal-header{
+//        h5{
+//            color: #5cb85c;
+//        }
+//    }
+//}

@@ -1,0 +1,57 @@
+.contact {
+  padding: 40px 0 70px 0;
+  background: rgba(0, 0, 0, .1);
+  h2 {
+    padding-bottom: 50px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 30px;
+    }
+  }
+  .fa {
+    color: $primary_color;
+    padding-right: 5px;
+    font-size: 1.2em;
+  }
+  .map {
+    height: 210px;
+    width: 310px;
+    @media (max-width: 768px) {
+      margin: 40px 0;
+      width: 100%;
+    }
+  }
+  p {
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  form {
+    .form-control {
+      border: none;
+      border-bottom: 2px solid rgba(0, 0, 0, .7);
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      background: transparent;
+      resize: none;
+      &:focus {
+        border-bottom: 2px solid $primary_color;
+      }
+    }
+    .btn {
+      background: transparent;
+      color: $primary_color;
+      width: 80px;
+      border: 1px solid $primary_color;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      font-size: 1.2em;
+
+      &:hover {
+        background: $primary_color;
+        color: #ffffff;
+      }
+    }
+  }
+}

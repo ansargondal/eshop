@@ -1,0 +1,45 @@
+//region Jquery Ui Ovverriden
+
+.ui-datepicker {
+  max-width: 230px;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  //background: #0c5460;
+
+  background: #f4f3ef;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  //color: #fff;
+}
+
+.ui-widget-content .ui-state-active {
+  background: #0c5460;
+  color: #fff;
+  border: 1px solid #0c5460;
+}
+
+.ui-state-highlight {
+  background: rgba(255, 0, 0, .2) !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button {
+  border: 1px solid rgba(0, 0, 0, .09) !important;
+}
+
+a:not([href]):not([tabindex]) {
+  border-radius: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, .05);
+  transition: background 100ms;
+}
+
+a:not([href]):not([tabindex]):hover {
+  background: rgba(255, 255, 255, .8);
+}
+
+//endregion

@@ -1,0 +1,227 @@
+h1, h2, h3, h4, h5, h6, a, p {
+  font-family: Raleway, sans-serif;
+}
+
+.section {
+  padding: 70px 0 50px 0;
+  //  padding: 35px 0;
+}
+
+.sticky-top {
+  background: #fff;
+}
+
+.highlight {
+  color: $primary_color;
+  span {
+    color: #313131;
+  }
+}
+
+h2 {
+  padding-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-control:focus {
+  outline-style: none;
+  box-shadow: none;
+  padding-left: 0px !important;
+}
+
+/*Sliders*/
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  margin-left: 15px;
+  &.active {
+    background-color: transparent;
+  }
+  &.active:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #fff;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.bttn {
+  //    display: none;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+  &:hover {
+    transition: box-shadow 1s;
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  }
+
+  background-color: $primary_color;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  &:link, &:visited,
+  &:link a, &:visited a {
+    background-color: $primary_color;
+    color: #fff;
+
+  }
+  &:hover, &:active,
+  &:hover a, &:active a {
+    background-color: $primary_color;
+    color: #fff;
+  }
+  &:active {
+    outline: 0;
+  }
+  &:focus,
+  &:focus a {
+    outline: 0 !important;
+  }
+}
+
+#signup_modal {
+  .modal-dialog {
+    border-radius: 5px;
+
+    .modal-body {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      padding: 0;
+      .col-6:first-of-type {
+        padding: 30px 30px;
+        background-color: white;
+        border-radius: 5px 0 0 5px;
+        color: #070707;
+        h3 {
+          color: #bd2440;
+          span {
+            color: #070707;
+          }
+        }
+      }
+      .col-6:last-of-type {
+        padding: 30px 30px;
+        background-color: #bd2440;
+        border-radius: 0px 5px 5px 0;
+        color: #070707;
+        p {
+          color: white;
+        }
+        h3 {
+          color: white;
+          span {
+            color: #070707;
+          }
+        }
+        a {
+          border: 1px solid white;
+        }
+      }
+
+    }
+  }
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 700px;
+    }
+  }
+}
+
+//region Bar animation on focus in input field
+.bar-animator {
+  width: 0;
+  height: 1px;
+  left: 50%;
+  top: 99%;
+  background: #0c5460;
+  position: absolute;
+  transition: all .2s ease-out;
+  @media (max-width: 633px) {
+    top: 98%;
+  }
+}
+
+.bar-animator.focus {
+  left: 0;
+  width: 100%;
+}
+
+//endregion
+
+//region Global form Elements Styling
+label {
+  position: relative;
+  transition: top 200ms ease-in-out;
+  font-size: .8em;
+  top: 40px;
+  color: rgba(0, 0, 0, .5);
+}
+
+.bootstrap-table {
+  label {
+    top: 48px;
+    &.focus {
+      top: 22px;
+      color: #0c5460;
+      font-weight: 600;
+    }
+  }
+}
+
+label.focus {
+  top: 12px;
+  color: #0c5460;
+  font-weight: 600;
+}
+
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  padding-left: 0;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 0;
+  }
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #f4f3ef inset;
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+//endregion
+
+#signup_modal .modal-content {
+  background: transparent;
+  border: none;
+  padding: 0;
+}

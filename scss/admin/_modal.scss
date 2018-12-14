@@ -1,0 +1,202 @@
+//region Global Modal Styling
+
+
+
+.modal {
+  .modal-dialog {
+    .btn {
+      color: #fff;
+      line-height: 1;
+    }
+
+    .btn-close {
+      background: #ffaf27;
+      &:hover {
+        background: hsla(38, 100, 58, .9);
+      }
+    }
+    .btn-file {
+      position: relative;
+      top: -30px !important;
+    }
+
+    max-width: 800px;
+    margin: 5rem auto;
+    @media (max-width: 768px) {
+      margin: 3rem .4rem 3rem 1.3rem;
+    }
+    .modal-content {
+      border-radius: 0;
+      background: #f4f3ef;
+      padding: 0 10px;
+
+      .modal-header {
+        padding: 10px;
+        margin: 0;
+        h2 {
+          font-size: 1.3em;
+          font-weight: 600;
+          margin: 0;
+        }
+        .close .fa-times {
+          font-size: .8em;
+        }
+
+      }
+      .modal-body {
+        .img-fake {
+          margin-left: 30px;
+          margin-top: 60px;
+          margin-bottom: 10px;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background: #fff;
+          border: 2px solid rgba(0, 0, 0, .3);
+          img.img-fluid {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+          .fa-cube {
+            display: none;
+            font-size: 5.4em;
+            line-height: 1.73;
+            color: rgba(0, 0, 0, .5);
+          }
+        }
+      }
+      .modal-footer {
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        padding: 10px;
+
+      }
+    }
+  }
+}
+
+//endregion
+
+//region Messages Modals
+#view-message-modal {
+  .form-control {
+    background: transparent !important;
+    resize: none !important;
+  }
+}
+
+//endregion
+
+//region Delete Modal Styling
+#delete-modal {
+  background: rgba(0, 0, 0, 0);
+  .modal-dialog {
+    background: transparent;
+    max-width: 350px;
+    margin: 18rem auto;
+    .modal-content {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .modal-header {
+    background: #ff2121;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 1);
+    max-height: 40px;
+    .modal-title {
+      font-weight: 700;
+    }
+  }
+}
+
+//endregion
+
+#message-modal {
+
+  .modal-dialog {
+    max-width: 25rem;
+    margin: 18rem auto;
+  }
+  .modal-body {
+    text-align: center;
+    margin-top: 10px;
+
+    a.close {
+      position: absolute;
+      top: -5px;
+      right: 3px;
+      z-index: 99999;
+    }
+
+    .success-message {
+      margin-top: 15px;
+      h3 {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: #1e7e34;
+      }
+      p {
+        color: rgba(0, 0, 0, .7);
+      }
+    }
+  }
+  #circle-svg {
+    fill: transparent;
+    stroke: #f4f3ef;
+    //stroke: red;
+    stroke-width: 16;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 1200;
+    animation: rotate 1.5s;
+    animation-fill-mode: forwards;
+    width: 190px;
+    height: 190px;
+    background: transparent;
+    position: absolute;
+    left: -12px;
+    top: -12px;
+    z-index: 399399;
+  }
+
+  @keyframes rotate {
+    100% {
+      stroke-dashoffset: 600;
+    }
+  }
+
+  #check-svg {
+    position: relative;
+    top: 25px;
+    fill: #1e7e34;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    animation: fade-in 500ms linear;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .success {
+    margin: 0 auto;
+    border: 3px dashed #1e7e34;
+    position: relative;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+}

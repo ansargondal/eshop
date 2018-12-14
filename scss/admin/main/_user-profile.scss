@@ -1,0 +1,62 @@
+
+.main#user-profile {
+
+  //user profile page css
+  .user-info {
+    //border: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 25px;
+
+    .col-md-8 {
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: 5px;
+    }
+    h3 {
+      padding-top: 10px;
+      font-weight: 600;
+      position: relative;
+      top: 10px
+    }
+    .btn-update {
+      background: #0c5460;
+      color: #fff;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .card-head {
+    border-radius: 0;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 130px;
+    border: none;
+    transform: translateX(0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: url("../img/profile-bg.jpg") center center;
+
+    @include overlay(rgba(7, 7, 7, .4));
+
+    .profile-pic {
+      width: 100px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50px);
+      border-radius: 50%;
+      border: 3px solid #eee;
+    }
+  }
+  .card-footer {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px 5px;
+    }
+    a {
+      float: none;
+    }
+  }
+  //end of user profile page css
+}

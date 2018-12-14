@@ -1,0 +1,222 @@
+@import "website/variables";
+@import "website/global";
+@import "website/nav";
+@import "website/footer";
+
+body {
+  overflow-x: hidden;
+  * {
+    font-family: Raleway, sans-serif;
+  }
+  nav {
+    z-index: 22;
+  }
+  .wrap1 {
+    background-image: url(../img/medical-bg.png);
+    -webkit-background-size: cover;
+
+  }
+
+  .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    @media (max-width: 576px) {
+    }
+    .navbar-brand img {
+
+      width: 200px;
+
+      @media (max-width: 576px) {
+        width: 130px;
+      }
+
+    }
+
+    .nav-link {
+      //      color: rgba(255, 255, 255, .7) !important;
+      font-size: 1.3em;
+
+      @media (max-width: 576px) {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .login-container {
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    .col-md-9 {
+      background-color: rgba(7, 7, 7, 0.4);
+      padding: 20px 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+    }
+    .user-group {
+      padding: 20px 0;
+    }
+
+    .fa-user-secret {
+      font-size: 3.3em;
+      border: 1px solid #fff;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 1.8;
+      border-radius: 50%;
+    }
+
+    .form-group {
+      margin-bottom: 60px;
+      position: relative;
+
+      .text-danger {
+        position: absolute;
+        top: 100%;
+        padding-top: 10px;
+      }
+
+      .bar-animator {
+        width: 0;
+        height: 1px;
+        left: 50%;
+        top: 99%;
+        background: #bd2440;
+        position: absolute;
+        transition: all 200ms ease-out;
+        @media (max-width: 633px) {
+          top: 98%;
+        }
+      }
+      .bar-animator.focus {
+        left: 0;
+        width: 100%;
+      }
+
+    }
+    label {
+      position: relative;
+      color: #fff;
+      top: 36px;
+      transition: top 200ms ease-in-out;
+    }
+
+    label.focus {
+      top: 0;
+    }
+
+    .form-control {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      padding-left: 0;
+      position: relative;
+
+      &::placeholder {
+        color: #fff;
+        margin: 0;
+        opacity: 0;
+        transition: opacity;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    .btn-login {
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+      &:hover {
+        transition: box-shadow 1s;
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+      }
+
+      background-color: $primary_color;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      &:link, &:visited,
+      &:link a, &:visited a {
+        background-color: $primary_color;
+        color: #fff;
+
+      }
+      &:hover, &:active,
+      &:hover a, &:active a {
+        background-color: $primary_color;
+        color: #fff;
+      }
+    }
+
+    .link-signup {
+      text-align: center;
+      a {
+        color: rgba(255, 255, 255, .7);
+      }
+    }
+  }
+  footer.footer {
+    .col-5 ul.footer-links {
+      list-style: none !important;
+    }
+  }
+
+}
+
+#forgot {
+  font-size: .9em;
+  color: #007bff !important;
+  position: absolute;
+  top: 110%;
+  left: 0;
+}
+
+.login-container label.error {
+  position: initial !important;
+  color: #bd2440 !important;
+}
+
+.modal {
+  .modal-header {
+    background: #bd2440;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .btn {
+    color: #fff;
+  }
+  .btn-close {
+    background: #6c757d;
+  }
+}
+
+.ivf {
+  input:focus {
+    border-bottom: 2px solid #fff !important;
+  }
+  .bar-animator {
+    display: none;
+  }
+  label.error {
+    top: 0 !important;
+    color: #bd2440 !important;
+    font-weight: 600;
+  }
+}
+
+.error {
+  color: #bd2440;
+}

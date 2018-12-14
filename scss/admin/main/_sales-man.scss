@@ -1,0 +1,45 @@
+#salesman-customers {
+  .blocked-user {
+    border: 1px solid rgba(255, 0, 0, .5)
+  }
+  .new-user {
+    border: 1px solid rgba(0, 255, 0, .5);
+  }
+  .btn-primary {
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 4px 10px;
+  }
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    .salesman-profile {
+      max-width: 100px;
+      min-width: 100px;
+      height: 100px;
+      margin: -10px 25px 0 0;
+      border-radius: 50%;
+      border: 3px solid #9d9d9b;
+    }
+    p {
+      color: rgba(0, 0, 0, .8);
+    }
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border: none;
+    padding: 15px 0;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: auto;
+      height: 1px;
+      width: 90%;
+      background: rgba(0, 0, 0, .1);
+    }
+
+  }
+}

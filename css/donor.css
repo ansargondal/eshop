@@ -1,0 +1,93 @@
+.main {
+  background-color: #F4F3EF;
+}
+
+.main .card {
+  border: 1px solid rbga(7, 7, 7, 0.4);
+  margin: 0 auto;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.main .card .card-body p {
+  font-size: .8em;
+}
+
+.main .card .card-footer {
+  background-color: transparent;
+}
+
+.main .row .table-responsive {
+  border: 1px solid rgba(7, 7, 7, 0.1);
+  padding: 10px;
+}
+
+.main .row .table-responsive table {
+  background-color: transparent;
+  border: 0;
+}
+
+.main .row .table-responsive table tr td:last-of-type {
+  padding: 5px;
+}
+
+.main .row .table-responsive table tr td:last-of-type .custom-select {
+  width: auto;
+  background: #fff url("../img/angle-down.png") no-repeat right 0.75rem center;
+  background-color: #BD2440;
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 0 50px 0 10px;
+  padding-right: 50px;
+}
+
+.main .row .table-responsive table tr td:last-of-type .custom-select option {
+  color: white;
+  border-radius: 0 0 5px 5px;
+  border-bottom: 0;
+  padding-right: 80px;
+}
+
+.main .row .table-responsive table tr td:last-of-type .custom-select option:hover {
+  background-color: rgba(7, 7, 7, 0.6);
+}
+
+.main div {
+  text-align: center;
+}
+
+.main div .pagination {
+  display: inline-block;
+}
+
+.main div .pagination li {
+  padding: 0;
+}
+
+.main div .pagination > li {
+  display: inline-block;
+}
+
+.main div .pagination > li > a {
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  width: 25px;
+  text-decoration: none;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(7, 7, 7, 0.5);
+  margin: 0 5px;
+  text-align: center;
+}
+
+.main div .pagination > .active > a {
+  background-color: #BD2440;
+  color: white;
+  border: 1px solid #BD2440;
+}
+
+.modal {
+  z-index: 9999;
+}

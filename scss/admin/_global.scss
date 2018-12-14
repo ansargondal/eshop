@@ -1,0 +1,379 @@
+//region Global HTML elements Styling
+body {
+  background: #f4f3ef;
+}
+
+* {
+  font-family: $font-family;
+}
+
+a {
+  outline: none;
+}
+
+[data-notify="container"] {
+  max-width: 360px;
+}
+
+[data-toggle=tooltip] {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//endregion
+
+//region Fixed Header and footer
+.box {
+  position: fixed;
+  left: 260px;
+  z-index: 555;
+  transition: left 160ms ease-in-out;
+}
+
+.header-box {
+  top: 0;
+  right: 0;
+}
+
+.footer-box {
+  bottom: 0;
+  right: 0;
+}
+
+//endregion
+
+//region Sidebar Toggle Styling
+//main area collapse
+.main-collapse {
+  margin-left: 50px !important;
+}
+
+//header footer collapse
+.hf-collapse {
+  left: 50px !important;
+}
+
+//rotate ... icon to 90 deg
+.header .navbar .navbar-brand.rotate {
+  transform: rotate(90deg);
+  border: 1px solid rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, .5);
+  &:hover {
+    border: 1px solid $black;
+    color: $black;
+  }
+}
+
+//region Global Buttons Styling
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  //  background: #0c5460;
+  background: $primary_color;
+  &:hover {
+    //    background: #bd2440 !important;
+  }
+}
+
+//endregion
+
+//region Bar animation on focus in input field
+.bar-animator {
+  width: 0;
+  height: 1px;
+  left: 50%;
+  top: 99%;
+  background: #0c5460;
+  position: absolute;
+  transition: all .2s ease-out;
+  @media (max-width: 633px) {
+    top: 98%;
+  }
+}
+
+.bar-animator.focus {
+  left: 0;
+  width: 100%;
+}
+
+//endregion
+
+//region Global table styling
+.table {
+  border: 1px solid rgba(0, 0, 0, .1);
+  //margin: 0 15px;
+  tbody tr:hover {
+    background: rgba(0, 0, 0, .03);
+  }
+  tr {
+    td, th {
+      border: none;
+      .fa {
+        padding-left: 10px;
+        display: inline-block;
+      }
+      .fa-times {
+        color: #ff2121;
+      }
+      .fa-edit {
+        color: #ffaf27;
+      }
+    }
+    th {
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      color: rgba(0, 0, 0, .9);
+    }
+  }
+  .pagination-row {
+    ul {
+      margin: 10px auto auto;
+      width: 15%;
+      li a {
+        background: rgba(255, 255, 255, .2);
+        margin-left: 5px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-weight: 500;
+        color: #0c5460;
+        border-radius: 50% !important;
+        &:hover {
+          background: #0c5460;
+          color: #fff;
+        }
+      }
+      .active {
+        background: #0c5460;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//endregion
+
+//region Global form Elements Styling
+label {
+  position: relative;
+  transition: top 200ms ease-in-out;
+  font-size: .8em;
+  top: 40px;
+  color: rgba(0, 0, 0, .5);
+}
+
+.bootstrap-table {
+  label {
+    top: 48px;
+    &.focus {
+      top: 22px;
+      color: #0c5460;
+      font-weight: 600;
+    }
+  }
+}
+
+label.focus {
+  top: 12px;
+  color: #0c5460;
+  font-weight: 600;
+}
+
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  padding-left: 0;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 0;
+  }
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #f4f3ef inset;
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+//endregion
+
+//region Tooltip Styling
+.tooltip {
+  left: 18px !important;
+  .tooltip-inner {
+    background: #fad390;
+    color: #000;
+  }
+  .arrow:before {
+    border-top-color: #fad390 !important;
+  }
+}
+
+//endregion
+
+//override the hover state of row
+table tr.pagination-row:hover {
+  background: transparent;
+}
+
+//region Spinner/Loader
+.fa-spinner {
+  animation: rotatespiner 900ms infinite ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotatespiner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hide_spinner {
+  display: none;
+}
+
+//endregion
+
+//region Custom Dropdown Menu
+
+.c-dropdown {
+  position: relative;
+  .form-control {
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+  }
+  label {
+    width: 100%;
+  }
+
+  .input-addon {
+    position: absolute;
+    right: 0;
+    top: 65%;
+  }
+  .c-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 33;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-top: none;
+    a {
+      color: #9d9d9b;
+      display: inline-block;
+      width: 100%;
+      line-height: 1.9;
+      padding-left: 5px;
+      &:hover {
+        text-decoration: none;
+        background: rgba(0, 0, 0, .03);
+        //background: #0c5460;
+      }
+    }
+  }
+}
+
+//endregion
+
+//region
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+.modal-header {
+  background-color: #bd2440;
+  color: white;
+  padding: 10px 10px;
+  .close {
+    color: #ffffff;
+    opacity: 1;
+  }
+  h5 {
+    margin-bottom: 0;
+  }
+}
+
+.modal-footer {
+  padding: 5px 10px;
+  .btn-close {
+    background-color: #707070;
+    border-radius: 5px;
+  }
+  #js-btn-delete {
+    border-radius: 5px;
+  }
+}
+
+#ui-datepicker-div {
+  margin-top: 1px;
+}
+
+.js-img-choosed {
+  width: 90%;
+}
+
+.img-fake i.fa-cube {
+  display: block;
+}
+
+.footer-box .footer .credits a {
+  text-decoration: underline;
+}
+
+//-----------
+.table-responsive {
+  border: 1px solid rgba(7, 7, 7, .1);
+  padding: 10px;
+  margin: 10px;
+  #data-table {
+    margin: 10px 0;
+    border: none;
+  }
+  tr:hover {
+    background-color: rgba(7, 7, 7, .1) !important;
+  }
+  tr:first-of-type:hover {
+    background-color: transparent !important;
+  }
+  #data-table_paginate {
+    position: absolute;
+    left: 40%;
+    bottom: 5px;
+    @media(max-width: 767px) {
+      position: initial;
+    }
+  }
+}
+
+
+

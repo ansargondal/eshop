@@ -1,0 +1,62 @@
+#products {
+
+  .ui-datepicker {
+    min-width: 38px !important;
+  }
+
+  .btn-primary {
+    margin-top: 31px;
+    @media (max-width: 767px) {
+      width: 100%;
+      font-weight: 700;
+    }
+  }
+
+  .card {
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .2);
+    max-width: 380px;
+    .card-body {
+      padding: 0 20px;
+    }
+  }
+
+  .status {
+    display: inline-block;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .products-summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, .7);
+    .divider {
+      border-left: 1px solid rgba(0, 0, 0, .7);
+    }
+    .status {
+      margin-top: 10px;
+      background: transparent;
+      width: 30px;
+      height: 30px;
+      border: 7px solid #1e7e34;
+    }
+    .in-stock {
+      border: 7px solid #27ae60;
+    }
+    .out-of-stock {
+      border: 7px solid #ee5253;
+
+    }
+    .short-in-stock {
+
+      border: 7px solid #ffaf27;
+
+    }
+  }
+}

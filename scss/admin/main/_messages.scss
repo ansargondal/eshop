@@ -1,0 +1,58 @@
+#messages {
+
+
+
+  .card {
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .2);
+  }
+  .card-body {
+    padding: 5px 0;
+  }
+
+  .messages-summary {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .6);
+    .divider {
+      border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+    .messages .fa {
+      color: #000;
+      position: relative;
+      top: 15px;
+    }
+    .read .fa {
+      color: #27ae60;
+      position: relative;
+      top: 15px;
+    }
+    .unread {
+      color: #ffaf27;
+      background: transparent;
+      border: none;
+      position: relative;
+      top: 15px;
+
+    }
+  }
+
+  .fa-envelope, .fa-envelope-open {
+    color: #ffaf27;
+  }
+  .fa-reply {
+    color: #0c5460;
+  }
+
+  .read {
+    background: transparent;
+    border-bottom: none;
+  }
+  .unread {
+    background: rgba(255, 0, 0, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+  }
+}

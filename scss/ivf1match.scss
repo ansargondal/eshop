@@ -1,0 +1,20 @@
+@import "website/variables";
+@import "website/mixins";
+@import "website/global";
+@import "website/nav";
+@import "website/hero";
+@import "website/donate";
+@import "website/process";
+@import "website/available";
+@import "website/reviews";
+@import "website/contact-us";
+@import "website/footer"; 
+ 
+
+@media(min-width:1400px){
+    section.hero{
+        padding: 200px 0;
+    }
+    
+} 
+ 

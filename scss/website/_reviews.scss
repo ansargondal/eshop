@@ -1,0 +1,49 @@
+.reviews {
+//  background: url("../../img/rough-horn-2146181_1920.jpg") center center;
+  color: $primary_color;
+  background-color: #F5F5F5;
+  position: relative;
+//  padding-bottom: 10px;
+    padding: 70px 0;
+    overflow-x: hidden;
+
+//  @include overlay();
+
+  p {
+    color: #707070;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  p.client-name {
+    margin-left: 15px;
+    span {
+      color: #ffaf27;
+      padding-right: 5px;
+    }
+  }
+  .carousel-item {
+      padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .client-image {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid #707070;
+    }
+  .client-rating {
+    color: #ffaf27;
+    text-align: center;
+    padding-top: 10px;
+  }
+    #review-slider .carousel-indicators .active{
+        background-color: $primary_color;
+    }
+    .carousel-indicators li{
+        border: 1px solid #707070;
+    }
+}

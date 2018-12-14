@@ -1,0 +1,66 @@
+section.hero{
+    background-image: url(../img/slider-image-opt.jpg);
+    position: relative;
+    @include overlay(rgba(0, 0, 0, .5));
+    background-size: cover;
+    padding: 90px 0;
+    .container .row .col-md-8{
+        text-align: center;
+        margin: 0 auto;
+        p:first-of-type{
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            span{
+                color: $primary_color;
+            }
+            
+        }
+        p:last-of-type{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            color: #BBB5B5;
+            font-size: 1.1em;
+        }
+        &>a{
+            color: white;
+            text-decoration: none;
+            background-color: $primary_color;
+            padding: 10px 15px;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+    }
+}
+@media(max-width:996px){
+    section.hero{
+        .container .row .col-md-8{
+             p:first-of-type{
+                font-size: 2em; 
+            }
+            p:last-of-type{
+                font-size: 1em;
+                width: 80%;
+            }
+            &>a{
+                font-size: 1em;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    section.hero{
+        .container .row .col-md-8{
+             p:first-of-type{
+                font-size: 1.7em;
+            }
+            p:last-of-type{
+                font-size: 0.8em;
+            }
+            &>a{
+                font-size: 0.8em;
+            }
+        }
+    }
+}

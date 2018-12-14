@@ -1,0 +1,117 @@
+.ui-datepicker {
+  min-width: 358px;
+}
+
+#inventory {
+  .card {
+    min-width: 380px;
+  }
+  .sales-summary {
+    li {
+      line-height: 2.3;
+      &:first-of-type {
+        .fa {
+          font-size: 2em;
+          color: rgba(231, 76, 60, .5);
+          font-weight: 700;
+        }
+
+        .fa-line-chart {
+          color: rgba(26, 188, 156, .5);
+        }
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: rgba(0, 0, 0, .6);
+        line-height: 1.8;
+        font-weight: 700;
+        font-size: 1.1em;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4em;
+      font-weight: 600;
+      color: rgba(0, 0, 0, .5);
+    }
+    .oos-item, .ate-item {
+      background: rgba(255, 0, 0, .7);
+      color: #fff;
+      padding: 0 5px;
+      font-size: .6em;
+      line-height: 2.5;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-align: center;
+    }
+    .ate-item {
+      background: #ffaf27;
+    }
+
+    padding-top: 3px;
+
+  }
+}
+
+#new-inventory-modal, #edit-inventory-modal {
+  .btn-add {
+    margin-top: 37px;
+  }
+  .tooltip {
+    left: -8px !important;
+  }
+  .products-table {
+    width: 100%;
+    background: rgba(0, 0, 0, .03);
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, .03);
+    tr {
+      th {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        color: rgba(0, 0, 0, .8);
+      }
+      td {
+        border: none;
+        color: rgba(0, 0, 0, .8);
+      }
+    }
+    .actions {
+      .fa-times {
+        color: #ff2121;
+      }
+      .fa-edit {
+        padding-right: 10px;
+      }
+    }
+  }
+  .calculations {
+    border: 1px solid rgba(0, 0, 0, .06);
+    background: rgba(0, 0, 0, .03);
+    //height: 100px;
+    ul {
+      padding: 5px;
+      li {
+        line-height: 2;
+        width: 86%;
+        left: 5%;
+        position: relative;
+        //padding: 10px;
+        color: rgba(0, 0, 0, .8);
+        .sales-text {
+          display: inline-block;
+          width: 120px;
+        }
+      }
+    }
+    .sales-total {
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      display: inline-block;
+      padding: 5px;
+      margin-top: 9px;
+    }
+  }
+}
+

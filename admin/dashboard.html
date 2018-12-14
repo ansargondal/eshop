@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../vendor/data-table/data-table.css">
+    <link rel="stylesheet" href="../css/admin/dashboard.min.css">
+    <link rel="stylesheet" href="../css/dashboardonly.min.css">
+    <link rel="stylesheet" href="../css/data-table.css">
+    <!--    <link rel="shortcut icon" href="../img/med-van.ico" type="image/x-icon">-->
+    <title>Dashboard - Overview</title>h
+</head>
+<body id="dashboard-page">
+<div class="box header-box">
+    <header class="header">
+        <nav class="navbar navbar-light navbar-expand">
+            <a href="#" class="navbar-brand js-sb-toggle">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </a>
+            <span class="page-title">Dashboard</span>
+            <ul class="nav navbar-nav ml-auto ">
+                <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link " data-toggle="dropdown">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="badge badge-danger badge-pill">22</span>
+                    </a>
+                    <div class="dropdown-menu message-dropdown">
+                        <a href="#" class="dropdown-item">
+                            <span class="initials">RM</span>
+                            <p>
+                                <span class="username font-weight-bold">Randy Moriss</span>
+                                <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
+                                to donate my sperms...</span>
+                            </p>
+                        </a><a href="#" class="dropdown-item">
+                        <span class="initials">TC</span>
+                        <p>
+                            <span class="username font-weight-bold">Todd Cutick</span>
+                            <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
+                                to donate my sperms...</span>
+                        </p>
+                    </a><a href="#" class="dropdown-item">
+                        <span class="initials">RB</span>
+                        <p>
+                            <span class="username font-weight-bold">Jason Almasy</span>
+                            <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
+                                to donate my sperms...</span>
+                        </p>
+                    </a><a href="#" class="dropdown-item">
+                        <span class="initials">AG</span>
+                        <p>
+                            <span class="username font-weight-bold">Alina Cutick</span>
+                            <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
+                                to donate my sperms...</span>
+                        </p>
+                    </a><a href="#" class="dropdown-item">
+                        <span class="initials">AG</span>
+                        <p>
+                            <span class="username font-weight-bold">John Doe</span>
+                            <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
+                                to donate my sperms...</span>
+                        </p>
+                    </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown profile-dropdown">
+                    <a href="user-profile.php" class="nav-link" data-toggle="dropdown">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">View Profile</a>
+                        <a href="#" class="dropdown-item">Edit Profile</a>
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<main class="main">
+    <div class="c-container px-3">
+        <div class="row stock-info mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">24 HOURS STOCK</h5>
+                    </div>
+                    <div class="card-body text-center ">
+                        <canvas width="380" height="150" id="24-hours-stock"></canvas>
+                        <br>
+                        <span class="btn btn-sm rounded bg-secondary">TZS</span>
+                        <span class="btn btn-sm rounded bg-secondary">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">24 HOURS SALE</h5>
+                    </div>
+                    <div class="card-body text-center ">
+                        <canvas width="380" height="150" id="24-hours-sale"></canvas>
+                        <br>
+                        <span class="btn btn-sm rounded bg-secondary">TZS</span>
+                        <span class="btn btn-sm rounded bg-secondary">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">24 HOURS DESTROY</h5>
+                    </div>
+                    <div class="card-body text-center ">
+                        <canvas width="380" height="150" id="24-hours-destroy"></canvas>
+                        <br>
+                        <span class="btn btn-sm rounded bg-secondary">TZS</span>
+                        <span class="btn btn-sm rounded bg-secondary">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 vendor-info">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">TOTAL VENDORS</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <span class="value">70</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">VENDOR STATISTICS</h5>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-white">
+                        <h5 class="mb-0">TOTAL VENDORS</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <span class="value">70</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--Main Sidebar-->
+<sidebar class="sidebar">
+    <div class="sb-container">
+        <p class="sb-brand">
+            <a href="dashboard.html">
+                <img class="" src="../img/logo.png" alt="IVF1 Logo">
+                <!--<span class="title"><span>IVF1</span>Match</span>-->
+            </a>
+        </p>
+
+        <ul class="sb-main-nav">
+            <li class="sb-profile-container">
+                <a href="#">
+                <span class="sb-profile">
+                    <img src="../img/face.png" alt="profile pic" class="img-fluid">
+                </span>
+                    Bonaventure</a>
+                <ul class="sb-sub-nav">
+                    <li><a href="user-profile.html"><span class="initials">MP</span>My Profile</a></li>
+                    <li><a href="user-profile.html"><span class="initials">EP</span>Edit Profile</a></li>
+                    <li><a href="user-profile.html"><span class="initials">S</span>Settings</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">
+                    <i class="fa fa-industry" aria-hidden="true"></i>DASHBOARD
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="dashboard.html"><span class="initials">O</span>Overview</a></li>
+                    <li><a href="dashboard.html"><span class="initials">S</span>Stats</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cube" aria-hidden="true"></i>PRODUCTS
+
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="donor.html"><span class="initials">AN</span>Add New</a></li>
+                    <li><a href="donor.html"><span class="initials">AP</span>All Products</a></li>
+                    <li><a href="donor.html"><span class="initials">PS</span>Product Stock</a></li>
+                    <li><a href="donor.html"><span class="initials">BR</span>Brands</a></li>
+                    <li><a href="donor.html"><span class="initials">CA</span>Categories</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-star" aria-hidden="true"></i>REVIEWS
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="recipient.html"><span class="initials">AN</span>Add New</a></li>
+                    <li><a href="recipient.html"><span class="initials">VA</span>View All</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>BLOG
+                </a>
+                <ul class="sb-sub-nav">
+                    <li><a href="message.html"><span class="initials">VA</span>View All</a></li>
+                    <li><a href="message.html"><span class="initials">R</span>Read</a></li>
+                    <li><a href="message.html"><span class="initials">UR</span>Unread</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-globe" aria-hidden="true"></i>ADD COUNTRY
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-globe" aria-hidden="true"></i>ADD REGION
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-money" aria-hidden="true"></i>LOCAL CASH PAYMENTS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-dollar pl-1" aria-hidden="true"></i>SALE
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-ship" aria-hidden="true"></i>SHIPPING CHARGES
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-list" aria-hidden="true"></i>REPORTS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users" aria-hidden="true"></i>CUSTOMERS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>MESSAGES
+
+                    <span class="badge badge-danger">22</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-tag" aria-hidden="true"></i>DISCOUNT COUPON
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user-md" aria-hidden="true"></i>VENDORS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-file"></i> CREATE NEW PAGE
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sliders"></i> SLIDER SETTINGS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-laptop"></i> FRONT SETTINGS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user-secret"></i> STAFFS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-search-plus"></i> SEO
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-language"></i> LANGUAGE
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cogs"></i> BUSINESS SETTINGS
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</sidebar>
+
+
+<div class="box footer-box">
+    <footer class="footer clearfix">
+        <div class="row">
+            <ul class="list-inline footer-links">
+                <li class="list-inline-item"><a href="dashboard.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="credits">
+                Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://devdimensions.com/"
+                                                                                  target="_blank">DevDimensions</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!--task modal-->
+<div class="modal fade new-modal" id="new-note-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="#" method="post" enctype="multipart/form-data" id="new-note-form">
+                <div class="modal-header">
+                    <h5 class="modal-title">NEW NOTE</h5>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="type">Type</label>
+                                <input type="text" class="form-control" id="type" name="type" autofocus="autofocus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="task">Note</label>
+                                <input type="text" class="form-control" id="task" name="note">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn bttn" type="submit">SAVE <i class="fa fa-spinner hide_spinner"
+                                                                   aria-hidden="true"></i>
+                    </button>
+                    <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--!task modal-->
+<!--Edit task modal-->
+<div class="modal fade" id="edit-note-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">EDIT NOTE</h5>
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="edit-type">Type</label>
+                                <input type="text" class="form-control" id="edit-type" name="type"
+                                       autofocus="autofocus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="edit-task">Task</label>
+                                <input type="text" class="form-control" id="edit-task" name="task">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn  bttn js-btn-update">UPDATE <i class="fa fa-spinner hide_spinner"
+                                                                  aria-hidden="true"></i></button>
+                <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--!Edit task modal-->
+<!--delete modal-->
+<div class="modal" id="delete-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="delete.php" method="post">
+                <div class="modal-header">
+                    <h6 class="modal-title">CONFIRM DELETE</h6>
+                    <a href="#" class="close" data-dismiss="modal">&times</a>
+                </div>
+                <div class="modal-body">
+                    <p>Do you Really want to delete?</p>
+                    <input type="text" name="id" id="id" class="d-none">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn  bg-danger" id="js-btn-delete" type="submit">Delete <i
+                            class="fa fa-spinner hide_spinner"
+                            aria-hidden="true"></i></button>
+                    <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--!delete modal-->
+
+
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery-validation/jquery.validate.js"></script>
+<script src="../vendor/data-table/data-table.js"></script>
+<script src="../vendor/data-table/dataTables.conditionalPaging.js"></script>
+
+<script src="../vendor/gauge/gauge.min.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/dashboard.js"></script>
+<script src="../vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipient Sign Up - Ivf1match</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/recipient-signup.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target="#navbar-main" data-offset="100">
+
+
+<!--Main Navigation-->
+<nav class="navbar navbar-dark navbar-dark navbar-expand-md" id="navbar-main">
+    <a href="#page-top" class="navbar-brand">
+        <img src="img/ivf1-match-logo.png" alt="AMS LOGO" class="img-fluid">
+    </a>
+    <button class="navbar-toggler" data-target="#main-nav" data-toggle="collapse">
+        <!--<span class="navbar-toggler-icon"></span>-->
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">HOW IT WORKS</a></li>
+            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#signup_modal" class="nav-link">SIGN
+                UP</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">LOG IN</a></li>
+            <li class="nav-item text-center"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="donor-profiles.html" class="btn bttn">Donor
+                Profiles</a></li>
+        </ul>
+    </div>
+</nav><!--nav-->
+
+<!--Hero section-->
+<section class="section hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Thank you for your <span>interest</span> in the <span>egg donation</span> program at IVF1</p>
+                <p>If you are already a patient of IVF1, you can start browsing though our available egg donors now.
+                    Otherwise, you'll need to sign up on this site to go deeper.</p>
+                <br><br>
+                <a href="donor-signup.html" class="bttn">Become a Donor</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Hero section ends-->
+
+<!--What is ivf starts here-->
+<section class="section ivf">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="highlight">Getting <span>Started</span></h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <p>If you find a donor you like and want to be matched, simply call us or send us a message
+                            through the <a href="https://patient.ivf1.com/patient/NewPatient/welcome.asp"
+                                           target="_blank">patient
+                                portal</a> with the donor code.</p>
+                        <p>If you are not a patient of IVF1, you can still browse through our egg donors and even sign
+                            up to see more detailed donor information, but if you want to use an egg donor you find
+                            here, you will need to <a href="https://patient.ivf1.com/patient/ivflogin.asp"
+                                                      target="_blank">become a patient</a> of IVF1 first.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="highlight">Messaging <span>Rules</span></h2>
+                    </div>
+                    <div class="col-xs-12">
+
+                        <p>IVF1Match is the only egg donor / recipient matching program in which recipients can
+                            correspond anonymously with donors. If you have a question or if you just want to relay your
+                            thanks, Now you can do it directly!</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-1"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            <div class="col-12 col-sm-11">
+                                <p>Messages will be reviewed by an administrator at IVF1. We want to make sure that
+                                    neither donors or recipients accidentally reveal their identity.If your message is
+                                    inappropriate, it will be deleted & you will be notified..</p>
+                            </div>
+                            <div class="col-12 col-sm-1"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                            <div class="col-12 col-sm-11">
+                                <p>Only recipients can initiate a conversation. donors can only reply to messages.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <form action="#" method="post" id="rsignup">
+                    <h2 class="highlight text-lef">Become a <span>Recipient</span></h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" tabindex="0" id="firstname"
+                                       name="firstname" autofocu>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email"
+                                       name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <button class="btn bttn" type="submit">Sign Up</button>
+                            <br><br>
+                            <p><a href="login.html">I 'm already a member?</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--What is ivf ends here-->
+
+<!--Footer -->
+<footer class="section footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 col-lg-3">
+                <ul class="footer-links">
+                    <li>PROJECTS</li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Request an Icon</a></li>
+                    <li><a href="#">Report a Bug</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">GitHub Project</a></li>
+                </ul>
+            </div>
+            <div class="col-7 col-lg-3">
+                <div class="wrap">
+                    <a href="https://www.socrei.org/home?ssopc=1">
+                        <img src="img/SREILogo.png" alt="" class="img-responsie mx-auo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="subscription-container">
+                    <p>IVF1Match is continiously providing best services to thier client. We are striving to deliver you
+                        best
+                        possible services at your door step.</p>
+                    <form action="#" method="post" id="f-subscribe">
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control">
+                            <span class="input-group-btn ">
+
+                        <button class="bttn" id="subscribe" type="submit">SUBSCRIBE</button>
+                            </span>
+                        </div>
+                        <br>
+                        <small class="form-text text-muted ">*We will not share your email with anyone
+                            else.
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </div><!--row-->
+        <hr>
+        <div class="row footer-bottom">
+            <div class="col-md-7">
+                <small>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="index.html">How It Works</a></li>
+                        <li class="list-inline-item"><a href="donor-signup.html">Sign Up</a></li>
+                        <li class="list-inline-item"><a href="login.html">Log In</a></li>
+                        <li class="list-inline-item"><a href="donor-profiles.html">Donor Profiles</a></li>
+                    </ul>
+                </small>
+            </div>
+            <div class="col-md-5">
+                <small class="credits">Made with <span><i class="fa fa-heart" aria-hidden="true"></i></span>by <a
+                        href="http://devdimensions.com/" target="_blank">
+                    DevDimensions</a>
+                </small>
+            </div>
+
+            <div class="back-to-top">
+                <a href="#page-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </div><!--row-->
+    </div><!--container-->
+</footer>
+
+<!--signup modal----->
+<div class="modal" id="signup_modal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <h3>Donor <span>Sign Up</span></h3>
+                        <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very special
+                            gift.</p>
+                        <a href="donor-signup.html" class="btn bttn">Sign up</a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <h3>Recipient <span>Sign Up</span></h3>
+                        <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very special
+                            gift.</p>
+                        <a href="recipient-signup.html" class="btn bttn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--signup modal----->
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.js"></script>
+<script src="vendor/jquery-validation/jquery.validate.js"></script>
+
+<script src="js/global.js"></script>
+<script src="js/dashboard.js"></script>
+
+<script src="js/holder.js"></script>
+<script src="js/ivf1match.js"></script>
+<!--<script src="js/form.js"></script>-->
+
+<script>
+    $().ready(function () {
+        $('#rsignup').validate({
+            rules: {
+                firstname: {
+                    required: true,
+                    minlength: 2
+                },
+                lastname: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                }
+            },
+            messages: {
+                firstname: {
+                    required: "Please enter your firstname.",
+                    minlength: "Firstname must have 2 atleast characters."
+                },
+                lastname: {
+                    required: "Please enter your lastname.",
+                    minlength: "Lastname must have 2 atleast characters."
+                },
+                email: "Pease enter valid email.",
+                password: {
+                    required: "Please enter your password.",
+                    minlength: "Password must have 5 atleast characters."
+                }
+            }
+        });
+    });
+
+</script>
+<script>
+    $().ready(function () {
+        $('#subscribe').submit(function (e) {
+            e.preventDefault();
+        });
+        $('#f-subscribe').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                email: "Pease enter valid email."
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>
